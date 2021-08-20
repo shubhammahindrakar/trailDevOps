@@ -1,0 +1,29 @@
+pipeline
+{
+	agent any
+	
+	stages
+	{
+		stage('stage-1')
+		{
+			steps
+			{
+				echo 'subBranch stage-1 is done'
+			}
+		}
+		stage('stage-2')
+		{
+			steps
+			{
+				echo 'subBranch stage2 is done'
+			}
+		}
+    stage('stage-3')
+		{
+			steps
+			{
+				echo 'subBranch stage3 is done'
+			}
+		}
+	}
+}
